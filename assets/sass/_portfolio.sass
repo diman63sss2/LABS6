@@ -1,0 +1,36 @@
+.portfolio_items
+  padding-top: 40px
+  border-top: 2px solid #4592FF
+  display: flex
+  flex-wrap: wrap
+.portfolio_item
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-left: 20px
+  width: 48%
+  height: 100px
+  margin-right: 4%
+  border: 1px solid grey
+  border-radius: 10px
+  background-color: #d6e9ffea
+  transition: 0.3s all ease
+  margin-bottom: 20px
+  &:hover
+    background-color: #93c5ffea
+  &:nth-child(2n)
+    margin-right: 0
+  h3
+  img
+    width: 40%
+    height: 100px
+    object-fit: cover
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    margin-right: -2px
+@media screen and ( max-width: 700px )
+  .portfolio_item
+    width: 100%
+    margin-right: 0px
+    h3
+      padding-right: 1px

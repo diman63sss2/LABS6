@@ -1,0 +1,190 @@
+.header
+  background: #262D33
+  padding-top: 15px
+  padding-bottom: 15px
+  position: relative
+  .burger__button
+    width: 25px
+    height: 50px
+    display: flex
+    align-items: center
+    display: none
+    &__line
+      height: 3px
+      width: 100%
+      background: white
+      position: relative
+      &::after
+        position: absolute
+        content: ""
+        height: 3px
+        width: 100%
+        top: -7px
+        background: white
+      &::before
+        position: absolute
+        content: ""
+        height: 3px
+        width: 100%
+        bottom: -7px
+        background: white
+  .lab_link
+    width: 40px
+    height: 40px
+    border-radius: 2px
+    overflow: hidden
+  .burger_menu
+    display: none
+    position: relative
+    position: absolute
+    z-index: 10
+    left: 0
+    top: 0
+    width: 400px
+    max-width: 100vw
+    padding: 20px
+    background: #3BBDC4
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+    .header-burger-menu
+      margin: 0
+      padding: 0
+      list-style-type: none
+    nav
+      margin: 0
+      padding: 0
+    .cross_burger
+      width: 30px
+      height: 30px
+      border-radius: 100px
+      position: absolute
+      right: 10px
+      top: 10px
+
+      &::after
+        position: absolute
+        content: ""
+        height: 2px
+        width: 20px
+        transform-origin: 50% 50%
+        transform: rotate(45deg)
+        left: 4px
+        top: 15px
+        background: #fff
+      &::before
+        position: absolute
+        content: ""
+        height: 2px
+        width: 20px
+        transform-origin: 50% 50%
+        transform: rotate(-45deg)
+        background: #fff
+        left: 4px
+        top: 15px
+    .lab_link
+      width: 40px
+      height: 40px
+      border-radius: 2px
+      display: block
+    .header-nav-burger
+      padding: 0
+      motion:
+    .menu-header-menu
+      margin: 0
+      padding: 0
+    li
+      margin: 0
+      padding: 0
+      a
+        margin: 0
+        padding: 0
+        font-size: 24px
+        padding-top: 6px
+        padding-bottom: 6px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    > .custom-logo-link img
+      height: 50px
+      width: 50px
+      object-fit: cover
+      border-radius: 100px
+  &-menu
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    align-items: center
+.menu
+  &-item
+    a
+      text-decoration: none
+      color: white
+      margin-left: 15px
+      margin-right: 15px
+      padding-bottom: 6px
+      transition: 0.3s all ease
+      opacity: 1
+      position: relative
+      &:hover
+        opacity: 0.4
+        &::after
+          width: 100%
+          left: 0
+      &::after
+        content: ""
+        background: white
+        position: absolute
+        width: 0px
+        height: 1px
+        left: 50%
+        transition: 0.3s all ease
+        bottom: 0px
+.search
+  &-form
+    position: relative
+    width: 263px
+    height: 40px
+  &-input[type="text"]
+
+    position: absolute
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+    background: #656B70
+    border: none
+    padding: 10px 25px
+    padding-right: 50px
+    border-radius: 10px
+    line-height: 20px
+    outline: none
+    color: black
+    &::placeholder
+      color: #939699
+  &-button
+    position: absolute
+    right: 15px
+    top: 0px
+    width: 40px
+    height: 40px
+    background: url('../images/loop.png') no-repeat center center
+    border: none
+    padding: 0
+    outline: none
+    cursor: pointer
+@media screen and ( max-width: 700px )
+  .header-nav
+    display: none
+  .header
+    .burger__button
+      display: flex
+  .custom-logo-link
+    display: none
+  .header .lab_link
+    display: none
+
+@media screen and ( max-width: 400px )
+  .search-form
+    width: 200px

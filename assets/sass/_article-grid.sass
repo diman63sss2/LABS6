@@ -1,0 +1,262 @@
+.article
+  &-grid
+    max-width: 847px
+    margin: 0
+    margin-bottom: 60px
+    margin-top: 0px
+    padding: 0
+    list-style: none
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr))
+    grid-template-rows: repeat(3, minmax(200px, max-content))
+    grid-auto-rows: minmax(200px, max-content)
+    grid-gap: 30px
+    &-item
+      border-radius: 10px
+      overflow: hidden
+      background: white
+      a
+        text-decoration: none
+      &-1
+        grid-area: 1 / 1 / 2 / 3
+        a
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          height: 100%
+        .content
+          height: 310px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          padding: 35px 30px 30px 35px
+        .article-grid-title
+          margin: 0
+          color: #262D33
+          font-family: "Roboto Slab", sans-serif
+          font-weight: bold
+          font-size: 25px
+          line-height: 30px
+          width: 70%
+        .article-category-name
+          text-transform: uppercase
+          color: #6E99AE
+          font-style: normal
+          font-weight: 900
+          font-size: 12px
+          line-height: 15px
+        .article-grid-excerpt
+          margin: 0
+          width: 60%
+          color: #4B5157
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+        .article-gride-info
+          display: flex
+          align-items: center
+          padding-top: 12px
+          padding-bottom: 12px
+          padding-left: 35px
+          padding-right: 30px
+          border-top: 1px solid #D9DADB
+        .authore-avatar
+          width: 30px
+          height: 30px
+          border-radius: 100px
+          margin-right: 10px
+        .authore-name
+          color: #262D33
+          margin-right: 5px
+        .comments
+          margin-left: auto
+          margin-right: 0
+        .comments-counter
+          color: #939699
+          font-size: 12px
+          line-height: 15px
+
+      &-2
+        position: relative
+        grid-area: 1 / 3 / 2 / 4
+        &::after
+          top: 0
+          left: 0
+          position: absolute
+          content: ''
+          width: 100%
+          height: 100%
+          background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+          z-index: 2
+        .article_thumnail
+          position: absolute
+          width: 100%
+          height: 100%
+          object-fit: cover
+          z-index: 1
+        .article-grid
+          &-permalink
+            padding: 25px
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            z-index: 3
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: space-between
+            .teg
+              background: #3DC47E
+              border-radius: 3px
+              padding: 5px 12px
+              color: #FFFFFF
+              font-size: 12px
+              line-height: 15px
+              margin-bottom: auto
+              text-transform: capitalize
+            .category-name
+              display: block
+              margin-bottom: 23px
+              font-family: 'Lato Black', sans-serif
+              font-size: 12px
+              line-height: 15px
+              text-transform: uppercase
+              color: #E7D9FF
+          &-title
+            margin: 0
+            color: #FFFFFF
+            font-family: "Roboto Slab", sans-serif
+            font-size: 16px
+            line-height: 25px
+            text-transform: uppercase
+            margin-bottom: 27px
+          &-info
+            display: flex
+            align-items: center
+            .authore-avatar
+              width: 45px
+              height: 45px
+              border-radius: 100px
+              margin-right: 10px
+            .authore-name
+              display: block
+              color: #FFFFFF
+              opacity: 1
+              font-weight: normal
+              font-size: 14px
+              line-height: 20px
+              margin-bottom: 2px
+            .article-date
+              font-size: 12px
+              line-height: 15px
+              opacity: 1
+              color: white
+              margin-right: 7px
+            .comments-counter
+              color: white
+              font-size: 12px
+              line-height: 15px
+              opacity: 1
+              margin-right: 7px
+            .like-counter
+              color: white
+              font-size: 12px
+              line-height: 15px
+              opacity: 1
+            .comments-icon, .like-icon
+              opacity: 1
+              margin-right: 5px
+
+      &-3
+        grid-area: 2 / 1 / 4 / 2
+        .article-grid-permalink
+          width: 100%
+          height: 100%
+          display: block
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          padding-bottom: 20px
+        .article-thumb
+          height: 315px
+          width: 100%
+          object-fit: cover
+          margin-bottom: 15px
+        .article-grid-title
+          margin: 0
+          padding: 0
+          margin-left: 25px
+          margin-right: 25px
+          color: #262D33
+          font-family: "Roboto Slab", sans-serif
+          font-size: 16px
+          line-height: 25px
+      &-default
+        .article-grid
+          &-permalink
+            width: 100%
+            height: 100%
+            display: block
+            padding: 25px
+            position: relative
+          &-title
+            color: #262D33
+            font-family: "Roboto Slab", sans-serif
+            font-size: 16px
+            line-height: 25px
+            margin: 0
+            margin-bottom: 5px
+          &-excerpt
+            margin: 0
+            margin-bottom: 1px
+            color: #4B5157
+            font-size: 14px
+            line-height: 20px
+        .article-date
+          position: absolute
+          bottom: 25px
+          left: 25px
+          color: #939699
+          font-size: 12px
+          line-height: 15px
+.main-grid
+  margin-top: 30px
+  display: flex
+  justify-content: space-between
+  align-items: start
+
+@media screen and ( max-width: 1270px )
+  .main-grid
+    flex-wrap: wrap
+  .article-grid
+    max-width: 100%
+  .article
+    &-grid
+      width: 65%
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(3, minmax(300px, max-content))
+      &-item
+        grid-area: auto
+        .tag
+          margin-bottom: 30px
+@media screen and ( max-width: 900px )
+  .main
+    &-grid
+      flex-wrap: wrap
+  .article
+    &-grid
+      width: 100%
+  .article-grid-item-1 .content
+    height: auto
+  .article-grid-item-1 .article-grid-title
+    margin-bottom: 10px
+    margin-top: 10px
+  .article-grid-item-1 .article-grid-excerpt,
+  .article-grid-item-1 .article-grid-title
+    width: 100%
+  .article-grid-item-3 .article-thumb
+    width: 100%
+    max-width: 100%
+  .article-grid-item-3 .article-grid-permalink
+    padding-bottom: 20px

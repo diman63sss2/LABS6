@@ -1,0 +1,76 @@
+.posts-section
+  margin-bottom: 60px
+  .container
+    display: flex
+    .post-items
+      padding-left: 25px
+      padding-right: 25px
+      width: 847px
+      background: #fff
+    .post-item
+      padding-top: 25px
+      padding-bottom: 25px
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid #D9DADB
+      position: relative
+      .post-img
+        width: 336px
+        height: 195px
+        margin-right: 25px
+        object-fit: cover
+      .post-content
+        width: 436px
+        height: 195px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &:last-child
+        border-bottom: none
+      .post-category
+        font-family: 'Lato Black', sans-serif
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        margin: 0
+        margin-bottom: 5px
+      .post-title
+        margin: 0
+        font-family: "Roboto Slab", sans-serif
+        font-size: 20px
+        line-height: 25px
+        color: #262D33
+      .post-description
+        margin: 0
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        margin-bottom: 10px
+      .sub-info
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+      .post-date
+        margin-right: 10px
+      .comments-icon
+        margin-right: 5px
+      .comments-counter
+        margin-right: 10px
+      .like-icon
+        margin-right: 5px
+      .post-select
+        position: absolute
+        right: 0
+        top: 26px
+        width: 14px
+        height: 18px
+        background: url(../images/Bookmark.png)
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+        cursor: pointer
+      .select
+        display: none
+        &:checked + .post-select
+          background: url(../images/Bookmark-active.png)

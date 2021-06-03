@@ -1,0 +1,84 @@
+.flys
+  display: flex
+  flex-wrap: wrap
+  &__item
+    width: 60px
+    height: 60px
+    background-color: yellow
+    border: 1px solid yellow
+    margin-right: 15px
+    margin-left: 15px
+    margin-bottom: 15px
+    margin-top: 15px
+    transition: 0.3s all ease
+    cursor: pointer
+    border-radius: 50%
+    padding: 10px
+    &:hover
+      border: 1px solid black
+    img
+      transform-origin: 100% 100%
+.container__columns
+  margin-top: 50px
+  display: flex
+.container__column
+  width: 50%
+  display: flex
+  flex-direction: column
+  &:nth-child(2)
+    align-items: center
+.gorshok
+  width: 200px
+  height: 200px
+  border-bottom: 2px solid orange
+  border-left: 2px solid orange
+  border-right: 2px solid orange
+  position: relative
+  span.span
+    z-index: 100
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    color: green
+  .after
+    content: ""
+    position: absolute
+    left: 0px
+    width: 100%
+    bottom: 0px
+    height: 0px
+    background: yellow
+.party__vini
+  width: 100%
+  display: flex
+  justify-content: space-between
+  img
+    width: 100px
+    height: auto
+  .piatochok
+    transition: 0.3s all ease
+    margin-top: 0
+    width: 100px
+    .piatochok__scale
+      border: 1px solid blue
+      width: 100%
+      height: 20px
+      .piatochok__scale__value
+        height: 100%
+        width: 0%
+        background: yellow
+  .vinipuh
+    transition: 0.3s all ease
+    margin-top: 0
+    width: 100px
+    .vinipuh__scale
+      border: 1px solid blue
+      width: 100%
+      height: 20px
+      .vinipuh__scale__value
+        height: 100%
+        width: 0%
+        background: yellow
+.comment-respond
+  display: none
